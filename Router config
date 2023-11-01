@@ -1,0 +1,24 @@
+Certainly, here's the README file based on the configuration steps for the router:
+
+# Router Configuration README
+
+## Cloud-Router Configuration
+
+- Review the router settings and logs.
+- Identify any line protocol state changes and interface adjustments.
+- Enter the router's configuration mode by typing `conf t` in the terminal.
+- Configure the interface `s1/0` with the IP address `192.168.48.2` and subnet mask `255.255.255.0`.
+- Activate the interface using the `no sh` command.
+- Verify the line protocol changes and state adjustments.
+
+## Edge-Router Configuration
+
+- Enter the router's configuration mode by typing `conf t` in the terminal.
+- Configure the interface `fe/0` with the IP address `192.168.20.1` and subnet mask `255.255.255.0`.
+- Activate the interface using the `no sh` command.
+- Configure the interface `f2/0` with the IP address `192.168.50.1` and subnet mask `255.255.255.0`.
+- Set the default route for the router using the command `ip route 0.0.0.0 0.0.0.0 s1/0`.
+- Configure another default route using the command `ip route 0.0.0.0 0.0.0.0 f0/0`.
+- Save the configuration using the command `do write`.
+
+Please ensure that the commands and configurations are accurate before applying them to the router.
